@@ -29,3 +29,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - DOM;
 - REST;
 - BOOSTRAP;
+
+-----------------------------------------------------------------------------------------------
+
+Desenvolvido por Rogério Fernandes da Silva.
