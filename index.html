@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Rick and Morty</title>
+    <!-- CSS do Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body class="bg-dark">
+    <nav class="navbar navbar-light bg-light mb-4 d-flex flex-column">
+      <h1 class="mb-4 mt-2">API de Rick and Morty</h1>
+      <input
+        class="form-control mr-sm-2 mb-2 w-50"
+        type="search"
+        placeholder="Pesquisar personagem por nome"
+        aria-label="Pesquisar"
+        id="searchCharactersByName"
+      />
+    </nav>
+    <section>
+      <div class="container">
+        <div
+          id="charactersList"
+          class="characters-list row row-cols-1 row-cols-md-3 g-4"
+        ></div>
+      </div>
+    </section>
+    <section class="img-back">
+      <div class="d-flex flex-column align-items-center">
+        <div id="pagination">
+          <button id="prevPage" type="button" class="btn btn-primary btn-md">
+            Anterior
+          </button>
+          <button id="nextPage" type="button" class="btn btn-primary btn-md">
+            Próximo
+          </button>
+        </div>
+        <div id="infoPage" class="info-page mt-3"></div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="d-flex justify-content-evenly" id="info-character">
+        <div id="infoCharacter"></div>
+        <div id="infoLocations"></div>
+        <div id="infoEpisodes"></div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/api.js"></script>
+    <script src="./js/scripts.js"></script>
+    <!-- Script do Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
